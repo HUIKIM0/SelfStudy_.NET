@@ -1,0 +1,10 @@
+D:\dev\C#Work\SelfStudy_.NET\SelfStudy_.NET\bin\Debug\SelfStudy_.NET.exe.config
+D:\dev\C#Work\SelfStudy_.NET\SelfStudy_.NET\bin\Debug\SelfStudy_.NET.exe
+D:\dev\C#Work\SelfStudy_.NET\SelfStudy_.NET\bin\Debug\SelfStudy_.NET.pdb
+D:\dev\C#Work\SelfStudy_.NET\SelfStudy_.NET\obj\Debug\SelfStudy_.NET.csprojAssemblyReference.cache
+D:\dev\C#Work\SelfStudy_.NET\SelfStudy_.NET\obj\Debug\SelfStudy_.NET.Form1.resources
+D:\dev\C#Work\SelfStudy_.NET\SelfStudy_.NET\obj\Debug\SelfStudy_.NET.Properties.Resources.resources
+D:\dev\C#Work\SelfStudy_.NET\SelfStudy_.NET\obj\Debug\SelfStudy_.NET.csproj.GenerateResource.cache
+D:\dev\C#Work\SelfStudy_.NET\SelfStudy_.NET\obj\Debug\SelfStudy_.NET.csproj.CoreCompileInputs.cache
+D:\dev\C#Work\SelfStudy_.NET\SelfStudy_.NET\obj\Debug\SelfStudy_.NET.exe
+D:\dev\C#Work\SelfStudy_.NET\SelfStudy_.NET\obj\Debug\SelfStudy_.NET.pdb

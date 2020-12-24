@@ -58,10 +58,9 @@ namespace SelfStudy_.NET
             this.lblText.AutoSize = true;
             this.lblText.Location = new System.Drawing.Point(175, 92);
             this.lblText.Name = "lblText";
-            this.lblText.Size = new System.Drawing.Size(133, 15);
+            this.lblText.Size = new System.Drawing.Size(132, 15);
             this.lblText.TabIndex = 0;
-            this.lblText.Text = "Sample, Text, Text";
-            this.lblText.Click += new System.EventHandler(this.lblText_Click);
+            this.lblText.Text = "Sample, Test, Text";
             // 
             // button1
             // 
