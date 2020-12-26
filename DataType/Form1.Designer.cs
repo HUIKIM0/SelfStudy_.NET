@@ -105,6 +105,7 @@ namespace DataType
             this.btnEx.TabIndex = 1;
             this.btnEx.Text = "알아서 변환";
             this.btnEx.UseVisualStyleBackColor = true;
+            this.btnEx.Click += new System.EventHandler(this.btnEx_Click);
             // 
             // btnInt
             // 
@@ -114,6 +115,7 @@ namespace DataType
             this.btnInt.TabIndex = 1;
             this.btnInt.Text = "Int 변환";
             this.btnInt.UseVisualStyleBackColor = true;
+            this.btnInt.Click += new System.EventHandler(this.btnInt_Click);
             // 
             // btnDouble
             // 
@@ -123,6 +125,7 @@ namespace DataType
             this.btnDouble.TabIndex = 1;
             this.btnDouble.Text = "Double 변환";
             this.btnDouble.UseVisualStyleBackColor = true;
+            this.btnDouble.Click += new System.EventHandler(this.btnDouble_Click);
             // 
             // lblShort
             // 
@@ -164,7 +167,7 @@ namespace DataType
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(834, 450);
+            this.ClientSize = new System.Drawing.Size(1166, 450);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
