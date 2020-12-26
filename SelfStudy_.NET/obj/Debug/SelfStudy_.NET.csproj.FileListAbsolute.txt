@@ -8,4 +8,3 @@ D:\dev\C#Work\SelfStudy_.NET\SelfStudy_.NET\obj\Debug\SelfStudy_.NET.csproj.Gene
 D:\dev\C#Work\SelfStudy_.NET\SelfStudy_.NET\obj\Debug\SelfStudy_.NET.csproj.CoreCompileInputs.cache
 D:\dev\C#Work\SelfStudy_.NET\SelfStudy_.NET\obj\Debug\SelfStudy_.NET.exe
 D:\dev\C#Work\SelfStudy_.NET\SelfStudy_.NET\obj\Debug\SelfStudy_.NET.pdb
-D:\dev\C#Work\SelfStudy_.NET\SelfStudy_.NET\obj\Debug\SelfStudy_.NET.DataType.resources
