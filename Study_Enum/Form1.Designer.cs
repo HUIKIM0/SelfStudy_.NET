@@ -70,6 +70,7 @@ namespace Study_Enum
             this.btnResult.TabIndex = 2;
             this.btnResult.Text = "결과보기";
             this.btnResult.UseVisualStyleBackColor = true;
+            this.btnResult.Click += new System.EventHandler(this.btnResult_Click);
             // 
             // btnResult2
             // 
@@ -79,6 +80,7 @@ namespace Study_Enum
             this.btnResult2.TabIndex = 2;
             this.btnResult2.Text = "StringForm Test";
             this.btnResult2.UseVisualStyleBackColor = true;
+            this.btnResult2.Click += new System.EventHandler(this.btnResult2_Click);
             // 
             // tboxResult
             // 
