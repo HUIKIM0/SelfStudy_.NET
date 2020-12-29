@@ -29,78 +29,80 @@ namespace Study_Enum
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.listBox2 = new System.Windows.Forms.ListBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tboxName = new System.Windows.Forms.TextBox();
+            this.lboxTime = new System.Windows.Forms.ListBox();
+            this.lboxDay = new System.Windows.Forms.ListBox();
+            this.btnResult = new System.Windows.Forms.Button();
+            this.btnResult2 = new System.Windows.Forms.Button();
+            this.tboxResult = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // textBox1
+            // tboxName
             // 
-            this.textBox1.Location = new System.Drawing.Point(31, 24);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(126, 25);
-            this.textBox1.TabIndex = 0;
+            this.tboxName.Location = new System.Drawing.Point(31, 24);
+            this.tboxName.Name = "tboxName";
+            this.tboxName.Size = new System.Drawing.Size(126, 25);
+            this.tboxName.TabIndex = 0;
             // 
-            // listBox1
+            // lboxTime
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 15;
-            this.listBox1.Location = new System.Drawing.Point(293, 70);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(213, 244);
-            this.listBox1.TabIndex = 1;
+            this.lboxTime.FormattingEnabled = true;
+            this.lboxTime.ItemHeight = 15;
+            this.lboxTime.Location = new System.Drawing.Point(293, 70);
+            this.lboxTime.Name = "lboxTime";
+            this.lboxTime.Size = new System.Drawing.Size(213, 244);
+            this.lboxTime.TabIndex = 1;
             // 
-            // listBox2
+            // lboxDay
             // 
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.ItemHeight = 15;
-            this.listBox2.Location = new System.Drawing.Point(31, 70);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(213, 244);
-            this.listBox2.TabIndex = 1;
+            this.lboxDay.FormattingEnabled = true;
+            this.lboxDay.ItemHeight = 15;
+            this.lboxDay.Location = new System.Drawing.Point(31, 70);
+            this.lboxDay.Name = "lboxDay";
+            this.lboxDay.Size = new System.Drawing.Size(213, 244);
+            this.lboxDay.TabIndex = 1;
             // 
-            // button1
+            // btnResult
             // 
-            this.button1.Location = new System.Drawing.Point(31, 329);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(95, 47);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnResult.Location = new System.Drawing.Point(31, 329);
+            this.btnResult.Name = "btnResult";
+            this.btnResult.Size = new System.Drawing.Size(95, 47);
+            this.btnResult.TabIndex = 2;
+            this.btnResult.Text = "결과보기";
+            this.btnResult.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnResult2
             // 
-            this.button2.Location = new System.Drawing.Point(293, 329);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(95, 47);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "button1";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnResult2.Location = new System.Drawing.Point(293, 329);
+            this.btnResult2.Name = "btnResult2";
+            this.btnResult2.Size = new System.Drawing.Size(95, 47);
+            this.btnResult2.TabIndex = 2;
+            this.btnResult2.Text = "StringForm Test";
+            this.btnResult2.UseVisualStyleBackColor = true;
             // 
-            // textBox2
+            // tboxResult
             // 
-            this.textBox2.Location = new System.Drawing.Point(31, 397);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(475, 108);
-            this.textBox2.TabIndex = 3;
+            this.tboxResult.Enabled = false;
+            this.tboxResult.Location = new System.Drawing.Point(31, 397);
+            this.tboxResult.Multiline = true;
+            this.tboxResult.Name = "tboxResult";
+            this.tboxResult.Size = new System.Drawing.Size(475, 108);
+            this.tboxResult.TabIndex = 3;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(548, 524);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.listBox2);
-            this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(548, 528);
+            this.Controls.Add(this.tboxResult);
+            this.Controls.Add(this.btnResult2);
+            this.Controls.Add(this.btnResult);
+            this.Controls.Add(this.lboxDay);
+            this.Controls.Add(this.lboxTime);
+            this.Controls.Add(this.tboxName);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -108,12 +110,12 @@ namespace Study_Enum
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.ListBox listBox2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tboxName;
+        private System.Windows.Forms.ListBox lboxTime;
+        private System.Windows.Forms.ListBox lboxDay;
+        private System.Windows.Forms.Button btnResult;
+        private System.Windows.Forms.Button btnResult2;
+        private System.Windows.Forms.TextBox tboxResult;
     }
 }
 
