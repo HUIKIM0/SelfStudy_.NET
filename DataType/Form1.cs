@@ -74,7 +74,7 @@ namespace DataType
             int iNumber = 0;
             double dNumber = 0;
 
-            tboxNumber.Text = "-";
+            lblException.Text = "-";
 
             if(short.TryParse(tboxNumber.Text, out sNumber))    // tboxNumber의 Text가 short 타입에 해당하면 short로 반환됨
             {
