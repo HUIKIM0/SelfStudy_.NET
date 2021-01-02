@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataType", "DataType\DataTy
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Study_Enum", "Study_Enum\Study_Enum.csproj", "{63B2CAF8-3DDB-4AB8-A222-102AD68E4502}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Array", "Array\Array.csproj", "{0CDAA2A7-1ADC-47DE-A66E-CED9DB214C65}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayTest", "Array\ArrayTest.csproj", "{0CDAA2A7-1ADC-47DE-A66E-CED9DB214C65}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
