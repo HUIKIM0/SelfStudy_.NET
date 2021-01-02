@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataType", "DataType\DataTy
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Study_Enum", "Study_Enum\Study_Enum.csproj", "{63B2CAF8-3DDB-4AB8-A222-102AD68E4502}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Array", "Array\Array.csproj", "{0CDAA2A7-1ADC-47DE-A66E-CED9DB214C65}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{63B2CAF8-3DDB-4AB8-A222-102AD68E4502}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{63B2CAF8-3DDB-4AB8-A222-102AD68E4502}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{63B2CAF8-3DDB-4AB8-A222-102AD68E4502}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CDAA2A7-1ADC-47DE-A66E-CED9DB214C65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CDAA2A7-1ADC-47DE-A66E-CED9DB214C65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CDAA2A7-1ADC-47DE-A66E-CED9DB214C65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CDAA2A7-1ADC-47DE-A66E-CED9DB214C65}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
