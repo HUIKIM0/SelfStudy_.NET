@@ -41,7 +41,16 @@ namespace ArrayTest
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.lblArrayCount = new System.Windows.Forms.Label();
+            this.iNum1 = new System.Windows.Forms.NumericUpDown();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.iNum2 = new System.Windows.Forms.NumericUpDown();
+            this.button3 = new System.Windows.Forms.Button();
+            this.lblcompare = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgDay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iNum1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iNum2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -149,11 +158,77 @@ namespace ArrayTest
             this.lblArrayCount.TabIndex = 0;
             this.lblArrayCount.Text = "전체 자료 수:0";
             // 
+            // iNum1
+            // 
+            this.iNum1.Location = new System.Drawing.Point(90, 337);
+            this.iNum1.Name = "iNum1";
+            this.iNum1.Size = new System.Drawing.Size(120, 25);
+            this.iNum1.TabIndex = 3;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(115, 339);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(0, 15);
+            this.label2.TabIndex = 4;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(12, 339);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(72, 15);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "첫번쨰 수";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(233, 345);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(72, 15);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "두번째 수";
+            // 
+            // iNum2
+            // 
+            this.iNum2.Location = new System.Drawing.Point(311, 339);
+            this.iNum2.Name = "iNum2";
+            this.iNum2.Size = new System.Drawing.Size(120, 25);
+            this.iNum2.TabIndex = 3;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(455, 334);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(104, 37);
+            this.button3.TabIndex = 6;
+            this.button3.Text = "숫자 비교";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // lblcompare
+            // 
+            this.lblcompare.AutoSize = true;
+            this.lblcompare.Location = new System.Drawing.Point(15, 385);
+            this.lblcompare.Name = "lblcompare";
+            this.lblcompare.Size = new System.Drawing.Size(42, 15);
+            this.lblcompare.TabIndex = 7;
+            this.lblcompare.Text = "결과:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1086, 450);
+            this.Controls.Add(this.lblcompare);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.iNum2);
+            this.Controls.Add(this.iNum1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dgDay);
@@ -162,6 +237,8 @@ namespace ArrayTest
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.dgDay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iNum1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iNum2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -181,6 +258,13 @@ namespace ArrayTest
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label lblArrayCount;
+        private System.Windows.Forms.NumericUpDown iNum1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.NumericUpDown iNum2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label lblcompare;
     }
 }
 

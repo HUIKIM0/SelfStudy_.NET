@@ -18,6 +18,11 @@ namespace ArrayTest
 
             ArrayTest();
             ArrayClassTest();
+            //
+            //ifTest();
+            //switchTest();
+
+
         }
 
 
@@ -99,5 +104,87 @@ namespace ArrayTest
             dgDay["colDay6", 1].Value = iTest2[1,5];
             dgDay["colDay7", 1].Value = iTest2[1,6];
         }
+
+        
+        private void button3_Click(object sender, EventArgs e)
+        {
+            int iNum1compare = (int)iNum1.Value;
+            int iNum2compare = (int)iNum2.Value;
+
+            if(iNum1compare > iNum2compare)
+            {
+                lblcompare.Text = string.Format("첫번째 수가 {0} 만큼 더 큽니다!",iNum1compare-iNum2compare);
+            }
+            else if(iNum2compare > iNum1compare)
+            {
+                lblcompare.Text = string.Format("두번째 수가 {0} 만큼 더 큽니다!",iNum2compare-iNum1compare);
+            }
+            else
+            {
+                lblcompare.Text = string.Format("첫번째 수와 두번째 수는 {0}으로, 같습니다!", iNum1compare);
+            }
+        }
+
+        //*****************************
+        private void iftest()
+        {
+            int a = 30;
+            int b = 20;
+
+            string strempty = string.Empty;
+
+
+            if (a > b)
+            {
+                strempty = "a가 더 크다";
+            }
+            else if (a < b)
+            {
+                strempty = "b가 더 크다";
+            }
+            else
+            {
+                strempty = "a와 b는 같은 값 입니다";
+            }
+
+
+            strempty = (a > b) ? "a가 크다" : "같다";
+
+
+            // && and || or  하나만 있으면 비트연산자
+        }
+
+        private void switchtest()
+        {
+            int switret = 8;
+
+            string strempty = string.Empty;
+
+            switch (switret)
+            {
+                case 10:
+                case 9:
+                case 8:
+                    strempty = "8이상 10이하의 층에 사시네요";
+                    break;
+                case 7:
+                case 6:
+                case 5:
+                    strempty = "5이상 7이하의 층에 사시네요";
+                    break;
+                case 4:
+                case 3:
+                case 2:
+                case 1:
+                    strempty = "1이상 4이하의 층에 사시네요";
+                    break;
+                default:
+                    strempty = "몇층에..사시나요...?";
+                    break;
+
+            }
+
+        }
+
     }
 }
