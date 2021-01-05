@@ -86,7 +86,8 @@ namespace ArrayTest
 
             lblArrayCount.Text = String.Format("전체 자료 수:{0}", iTest2.Length.ToString());
 
-            dgDay.Rows.Add();
+            dgDay.Rows.Add();  //2번째 줄 추가
+
 
             dgDay["colDay1", 0].Value = iTest2[0,0];
             dgDay["colDay2", 0].Value = iTest2[0,1];
