@@ -45,6 +45,7 @@ namespace Repeat_study
 
             int i = 0;
             
+            // 배열의 요소를 하나씩 가져옴
             foreach (var oValue in strArray)
             {
                 i++;
