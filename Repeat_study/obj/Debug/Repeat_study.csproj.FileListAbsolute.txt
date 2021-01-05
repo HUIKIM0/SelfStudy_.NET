@@ -1,0 +1,10 @@
+D:\dev\C#Work\SelfStudy_.NET\Repeat_study\bin\Debug\Repeat_study.exe.config
+D:\dev\C#Work\SelfStudy_.NET\Repeat_study\bin\Debug\Repeat_study.exe
+D:\dev\C#Work\SelfStudy_.NET\Repeat_study\bin\Debug\Repeat_study.pdb
+D:\dev\C#Work\SelfStudy_.NET\Repeat_study\obj\Debug\Repeat_study.csprojAssemblyReference.cache
+D:\dev\C#Work\SelfStudy_.NET\Repeat_study\obj\Debug\Repeat_study.Form1.resources
+D:\dev\C#Work\SelfStudy_.NET\Repeat_study\obj\Debug\Repeat_study.Properties.Resources.resources
+D:\dev\C#Work\SelfStudy_.NET\Repeat_study\obj\Debug\Repeat_study.csproj.GenerateResource.cache
+D:\dev\C#Work\SelfStudy_.NET\Repeat_study\obj\Debug\Repeat_study.csproj.CoreCompileInputs.cache
+D:\dev\C#Work\SelfStudy_.NET\Repeat_study\obj\Debug\Repeat_study.exe
+D:\dev\C#Work\SelfStudy_.NET\Repeat_study\obj\Debug\Repeat_study.pdb
