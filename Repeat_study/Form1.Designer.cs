@@ -61,6 +61,7 @@ namespace Repeat_study
             this.btnforeach.TabIndex = 1;
             this.btnforeach.Text = "foreach 문";
             this.btnforeach.UseVisualStyleBackColor = true;
+            this.btnforeach.Click += new System.EventHandler(this.btnforeach_Click);
             // 
             // Form1
             // 
