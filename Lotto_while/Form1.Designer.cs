@@ -58,6 +58,7 @@ namespace Lotto_while
             this.btnrottoResult.TabIndex = 1;
             this.btnrottoResult.Text = "로또번호";
             this.btnrottoResult.UseVisualStyleBackColor = true;
+            this.btnrottoResult.Click += new System.EventHandler(this.btnrottoResult_Click);
             // 
             // lboxrottoResult
             // 
