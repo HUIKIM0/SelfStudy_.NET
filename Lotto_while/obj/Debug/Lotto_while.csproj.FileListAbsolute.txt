@@ -1,0 +1,10 @@
+D:\dev\C#Work\SelfStudy_.NET\Lotto_while\bin\Debug\Lotto_while.exe.config
+D:\dev\C#Work\SelfStudy_.NET\Lotto_while\bin\Debug\Lotto_while.exe
+D:\dev\C#Work\SelfStudy_.NET\Lotto_while\bin\Debug\Lotto_while.pdb
+D:\dev\C#Work\SelfStudy_.NET\Lotto_while\obj\Debug\Lotto_while.csprojAssemblyReference.cache
+D:\dev\C#Work\SelfStudy_.NET\Lotto_while\obj\Debug\Lotto_while.Form1.resources
+D:\dev\C#Work\SelfStudy_.NET\Lotto_while\obj\Debug\Lotto_while.Properties.Resources.resources
+D:\dev\C#Work\SelfStudy_.NET\Lotto_while\obj\Debug\Lotto_while.csproj.GenerateResource.cache
+D:\dev\C#Work\SelfStudy_.NET\Lotto_while\obj\Debug\Lotto_while.csproj.CoreCompileInputs.cache
+D:\dev\C#Work\SelfStudy_.NET\Lotto_while\obj\Debug\Lotto_while.exe
+D:\dev\C#Work\SelfStudy_.NET\Lotto_while\obj\Debug\Lotto_while.pdb
