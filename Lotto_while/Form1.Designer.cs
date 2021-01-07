@@ -93,6 +93,7 @@ namespace Lotto_while
             this.btnchoiceResult.TabIndex = 5;
             this.btnchoiceResult.Text = "선택 번호 뽑기";
             this.btnchoiceResult.UseVisualStyleBackColor = true;
+            this.btnchoiceResult.Click += new System.EventHandler(this.btnchoiceResult_Click);
             // 
             // lblfindResult
             // 
