@@ -117,7 +117,6 @@ namespace ClassStudy_Game
             this.rdoPlayer1.Name = "rdoPlayer1";
             this.rdoPlayer1.Size = new System.Drawing.Size(96, 19);
             this.rdoPlayer1.TabIndex = 4;
-            this.rdoPlayer1.TabStop = true;
             this.rdoPlayer1.Text = "플레이어1";
             this.rdoPlayer1.UseVisualStyleBackColor = true;
             // 
@@ -128,7 +127,6 @@ namespace ClassStudy_Game
             this.rdoPlayer2.Name = "rdoPlayer2";
             this.rdoPlayer2.Size = new System.Drawing.Size(96, 19);
             this.rdoPlayer2.TabIndex = 4;
-            this.rdoPlayer2.TabStop = true;
             this.rdoPlayer2.Text = "플레이어2";
             this.rdoPlayer2.UseVisualStyleBackColor = true;
             // 
