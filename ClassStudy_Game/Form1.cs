@@ -27,16 +27,16 @@ namespace ClassStudy_Game
 
 
         //값들을 더해서 계산
-        public int ValueSum(int iSun, int iMoon, int iStar)
-        {
-            return iSun + iMoon + iStar;
-        }
+        //public int ValueSum(int iSun, int iMoon, int iStar)
+        //{
+        //    return iSun + iMoon + iStar;
+        //}
 
-        //결과를 string 형태로 반환하여 화면에 보여주기 용도
-        public string iText()
-        {
-            return string.Format("{0}회) 해:{1}, 달{2}, 별{3} => 합계는 {4} 입니다.", iCount, iSun, iMoon, iStar, iTotal);
-        }
+        ////결과를 string 형태로 반환하여 화면에 보여주기 용도
+        //public string iText()
+        //{
+        //    return string.Format("{0}회) 해:{1}, 달{2}, 별{3} => 합계는 {4} 입니다.", iCount, iSun, iMoon, iStar, iTotal);
+        //}
 
     }
 
@@ -45,11 +45,11 @@ namespace ClassStudy_Game
     public partial class Form1 : Form
     {
 
-        //structPlayer _strPlayer1;   //구조체 사용 1번 Player
-        //structPlayer _strPlayer2;   //구조체 사용 2번 Player
+        structPlayer _strPlayer1;   //구조체 사용 1번 Player
+        structPlayer _strPlayer2;   //구조체 사용 2번 Player
 
-        CPlayer _clPlayer1 = new CPlayer();
-        CPlayer _clPlayer2 = new CPlayer();
+        //CPlayer _clPlayer1 = new CPlayer();
+        //CPlayer _clPlayer2 = new CPlayer();
 
 
         Random _rd = new Random();
@@ -65,11 +65,11 @@ namespace ClassStudy_Game
 
             if (rdoPlayer1.Checked)
             {
-                _clPlayer1.iSun = iNumber;
+                _strPlayer1.iSun = iNumber;
             }
             else
             {
-                _clPlayer2.iSun = iNumber;
+                _strPlayer2.iSun = iNumber;
             }
 
             Result();
@@ -82,11 +82,11 @@ namespace ClassStudy_Game
 
             if (rdoPlayer1.Checked)
             {
-                _clPlayer1.iMoon = iNumber;
+                _strPlayer1.iMoon = iNumber;
             }
             else
             {
-                _clPlayer2.iMoon = iNumber;
+                _strPlayer2.iMoon = iNumber;
             }
 
             Result();
@@ -99,11 +99,11 @@ namespace ClassStudy_Game
 
             if (rdoPlayer1.Checked)
             {
-                _clPlayer1.iStar = iNumber;
+                _strPlayer1.iStar = iNumber;
             }
             else
             {
-                _clPlayer2.iStar = iNumber;
+                _strPlayer2.iStar = iNumber;
             }
 
             Result();
@@ -131,7 +131,8 @@ namespace ClassStudy_Game
             }
         }
 
-        
+
+        CPlayer cp = new CPlayer();  //class
 
         private void Result()
         {
@@ -139,41 +140,40 @@ namespace ClassStudy_Game
 
             int iCount = 0;   
 
+            //플레이어1이 카드 선택
             if (rdoPlayer1.Checked)
             {
-                _clPlayer1.iCount++;
+                _strPlayer1.iCount++;
 
-                _clPlayer1.iTotal = _clPlayer1.ValueSum(_clPlayer1.iSun, _clPlayer1.iMoon, _clPlayer1.iStar);  
+                //int인자를 3개 가진 class로 가서 수식만 계산해서 return해줌
+                _strPlayer1.iTotal = cp.ValueSum(_strPlayer1.iSun, _strPlayer1.iMoon, _strPlayer1.iStar);  
 
-                strResult = _clPlayer1.iText();   
+                strResult = cp.iText(_strPlayer1.iCount, _strPlayer1.iSun, _strPlayer1.iMoon, _strPlayer1.iStar, _strPlayer1.iTotal);   
                 lboxResult1.Items.Add(strResult);
 
             }
+            //플레이어2가 카드 선택
             else
             {
-                _clPlayer2.iCount++;
+                _strPlayer2.iCount++;
 
-                _clPlayer2.iTotal = _clPlayer2.ValueSum(_clPlayer2.iSun, _clPlayer2.iMoon, _clPlayer2.iStar);
+                _strPlayer2.iTotal = cp.ValueSum(_strPlayer2.iSun, _strPlayer2.iMoon, _strPlayer2.iStar);
 
-                strResult = _clPlayer2.iText();
+                strResult = cp.iText(_strPlayer2.iCount, _strPlayer2.iSun, _strPlayer2.iMoon, _strPlayer2.iStar, _strPlayer2.iTotal);
                 lboxResult2.Items.Add(strResult);
             }
 
-            if(_clPlayer1.iCount >=5 && _clPlayer2.iCount >=5)
+          
+            if(_strPlayer1.iCount == _strPlayer2.iCount)
             {
-                if (_clPlayer1.iTotal > _clPlayer2.iTotal)
+                lboxNow.Items.Add(cp.PlayerPair(_strPlayer2.iCount, _strPlayer1.iTotal, _strPlayer2.iTotal));
+
+                if(_strPlayer2.iCount >= 5)  //5회를 다 돌았다
                 {
-                    MessageBox.Show("플레이어1이 이겼습니다");
-                }
-                else if(_clPlayer1.iTotal < _clPlayer2.iTotal)
-                {
-                    MessageBox.Show("플레이어2이 이겼습니다");
-                }
-                else
-                {
-                    MessageBox.Show("플레이어1과 2가 비겼습니다");
+                    lboxNow.Items.Add(cp.PlayerResult(_strPlayer1.iTotal,_strPlayer2.iTotal));
                 }
             }
+
         }
 
 

@@ -39,6 +39,8 @@ namespace ClassStudy_Game
             this.rdoPlayer2 = new System.Windows.Forms.RadioButton();
             this.lboxResult1 = new System.Windows.Forms.ListBox();
             this.lboxResult2 = new System.Windows.Forms.ListBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lboxNow = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.pboxSun)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pboxMoon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pboxStar)).BeginInit();
@@ -68,7 +70,7 @@ namespace ClassStudy_Game
             // 
             this.pboxSun.BackColor = System.Drawing.Color.Red;
             this.pboxSun.Image = global::ClassStudy_Game.Properties.Resources._1;
-            this.pboxSun.Location = new System.Drawing.Point(24, 95);
+            this.pboxSun.Location = new System.Drawing.Point(24, 82);
             this.pboxSun.Name = "pboxSun";
             this.pboxSun.Size = new System.Drawing.Size(138, 164);
             this.pboxSun.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -80,7 +82,7 @@ namespace ClassStudy_Game
             // 
             this.pboxMoon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.pboxMoon.Image = global::ClassStudy_Game.Properties.Resources._2;
-            this.pboxMoon.Location = new System.Drawing.Point(188, 95);
+            this.pboxMoon.Location = new System.Drawing.Point(188, 82);
             this.pboxMoon.Name = "pboxMoon";
             this.pboxMoon.Size = new System.Drawing.Size(138, 164);
             this.pboxMoon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -92,7 +94,7 @@ namespace ClassStudy_Game
             // 
             this.pboxStar.BackColor = System.Drawing.Color.Lime;
             this.pboxStar.Image = global::ClassStudy_Game.Properties.Resources._3;
-            this.pboxStar.Location = new System.Drawing.Point(350, 95);
+            this.pboxStar.Location = new System.Drawing.Point(350, 82);
             this.pboxStar.Name = "pboxStar";
             this.pboxStar.Size = new System.Drawing.Size(138, 164);
             this.pboxStar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -103,7 +105,7 @@ namespace ClassStudy_Game
             // pboxNone
             // 
             this.pboxNone.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.pboxNone.Location = new System.Drawing.Point(516, 95);
+            this.pboxNone.Location = new System.Drawing.Point(516, 82);
             this.pboxNone.Name = "pboxNone";
             this.pboxNone.Size = new System.Drawing.Size(138, 164);
             this.pboxNone.TabIndex = 3;
@@ -113,7 +115,7 @@ namespace ClassStudy_Game
             // rdoPlayer1
             // 
             this.rdoPlayer1.AutoSize = true;
-            this.rdoPlayer1.Location = new System.Drawing.Point(24, 290);
+            this.rdoPlayer1.Location = new System.Drawing.Point(24, 270);
             this.rdoPlayer1.Name = "rdoPlayer1";
             this.rdoPlayer1.Size = new System.Drawing.Size(96, 19);
             this.rdoPlayer1.TabIndex = 4;
@@ -123,7 +125,7 @@ namespace ClassStudy_Game
             // rdoPlayer2
             // 
             this.rdoPlayer2.AutoSize = true;
-            this.rdoPlayer2.Location = new System.Drawing.Point(350, 290);
+            this.rdoPlayer2.Location = new System.Drawing.Point(350, 270);
             this.rdoPlayer2.Name = "rdoPlayer2";
             this.rdoPlayer2.Size = new System.Drawing.Size(96, 19);
             this.rdoPlayer2.TabIndex = 4;
@@ -134,26 +136,46 @@ namespace ClassStudy_Game
             // 
             this.lboxResult1.FormattingEnabled = true;
             this.lboxResult1.ItemHeight = 15;
-            this.lboxResult1.Location = new System.Drawing.Point(24, 337);
+            this.lboxResult1.Location = new System.Drawing.Point(24, 311);
             this.lboxResult1.Name = "lboxResult1";
-            this.lboxResult1.Size = new System.Drawing.Size(302, 169);
+            this.lboxResult1.Size = new System.Drawing.Size(302, 124);
             this.lboxResult1.TabIndex = 5;
             // 
             // lboxResult2
             // 
             this.lboxResult2.FormattingEnabled = true;
             this.lboxResult2.ItemHeight = 15;
-            this.lboxResult2.Location = new System.Drawing.Point(350, 337);
+            this.lboxResult2.Location = new System.Drawing.Point(350, 311);
             this.lboxResult2.Name = "lboxResult2";
-            this.lboxResult2.Size = new System.Drawing.Size(304, 169);
+            this.lboxResult2.Size = new System.Drawing.Size(304, 124);
             this.lboxResult2.TabIndex = 5;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(21, 452);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(65, 15);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "- 상황판";
+            // 
+            // lboxNow
+            // 
+            this.lboxNow.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lboxNow.FormattingEnabled = true;
+            this.lboxNow.ItemHeight = 15;
+            this.lboxNow.Location = new System.Drawing.Point(24, 482);
+            this.lboxNow.Name = "lboxNow";
+            this.lboxNow.Size = new System.Drawing.Size(630, 124);
+            this.lboxNow.TabIndex = 5;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(697, 518);
+            this.ClientSize = new System.Drawing.Size(823, 616);
             this.Controls.Add(this.lboxResult2);
+            this.Controls.Add(this.lboxNow);
             this.Controls.Add(this.lboxResult1);
             this.Controls.Add(this.rdoPlayer2);
             this.Controls.Add(this.rdoPlayer1);
@@ -162,6 +184,7 @@ namespace ClassStudy_Game
             this.Controls.Add(this.pboxMoon);
             this.Controls.Add(this.pboxSun);
             this.Controls.Add(this.label2);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -186,6 +209,8 @@ namespace ClassStudy_Game
         private System.Windows.Forms.RadioButton rdoPlayer2;
         private System.Windows.Forms.ListBox lboxResult1;
         private System.Windows.Forms.ListBox lboxResult2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ListBox lboxNow;
     }
 }
 
