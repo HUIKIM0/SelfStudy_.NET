@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+//같은 프로젝트에 있는 친구들 끼리는 namespace가 똑같다
 namespace ClassStudy_Game
 {
 
@@ -40,11 +41,16 @@ namespace ClassStudy_Game
     }
 
 
+
     public partial class Form1 : Form
     {
-      
-        structPlayer _strPlayer1;   //구조체 사용 1번 Player
-        structPlayer _strPlayer2;   //구조체 사용 2번 Player
+
+        //structPlayer _strPlayer1;   //구조체 사용 1번 Player
+        //structPlayer _strPlayer2;   //구조체 사용 2번 Player
+
+        CPlayer _clPlayer1 = new CPlayer();
+        CPlayer _clPlayer2 = new CPlayer();
+
 
         Random _rd = new Random();
 
@@ -59,11 +65,11 @@ namespace ClassStudy_Game
 
             if (rdoPlayer1.Checked)
             {
-                _strPlayer1.iSun = iNumber;
+                _clPlayer1.iSun = iNumber;
             }
             else
             {
-                _strPlayer2.iSun = iNumber;
+                _clPlayer2.iSun = iNumber;
             }
 
             Result();
@@ -76,11 +82,11 @@ namespace ClassStudy_Game
 
             if (rdoPlayer1.Checked)
             {
-                _strPlayer1.iMoon = iNumber;
+                _clPlayer1.iMoon = iNumber;
             }
             else
             {
-                _strPlayer2.iMoon = iNumber;
+                _clPlayer2.iMoon = iNumber;
             }
 
             Result();
@@ -93,11 +99,11 @@ namespace ClassStudy_Game
 
             if (rdoPlayer1.Checked)
             {
-                _strPlayer1.iStar = iNumber;
+                _clPlayer1.iStar = iNumber;
             }
             else
             {
-                _strPlayer2.iStar = iNumber;
+                _clPlayer2.iStar = iNumber;
             }
 
             Result();
@@ -135,31 +141,31 @@ namespace ClassStudy_Game
 
             if (rdoPlayer1.Checked)
             {
-                _strPlayer1.iCount++; 
-                
-                _strPlayer1.iTotal = _strPlayer1.ValueSum(_strPlayer1.iSun, _strPlayer1.iMoon, _strPlayer1.iStar);  
+                _clPlayer1.iCount++;
 
-                strResult = _strPlayer1.iText();   
+                _clPlayer1.iTotal = _clPlayer1.ValueSum(_clPlayer1.iSun, _clPlayer1.iMoon, _clPlayer1.iStar);  
+
+                strResult = _clPlayer1.iText();   
                 lboxResult1.Items.Add(strResult);
 
             }
             else
             {
-                _strPlayer2.iCount++;
+                _clPlayer2.iCount++;
 
-                _strPlayer2.iTotal = _strPlayer2.ValueSum(_strPlayer2.iSun, _strPlayer2.iMoon, _strPlayer2.iStar);
+                _clPlayer2.iTotal = _clPlayer2.ValueSum(_clPlayer2.iSun, _clPlayer2.iMoon, _clPlayer2.iStar);
 
-                strResult = _strPlayer2.iText();
+                strResult = _clPlayer2.iText();
                 lboxResult2.Items.Add(strResult);
             }
 
-            if(_strPlayer1.iCount >=5 && _strPlayer2.iCount >=5)
+            if(_clPlayer1.iCount >=5 && _clPlayer2.iCount >=5)
             {
-                if (_strPlayer1.iTotal > _strPlayer2.iTotal)
+                if (_clPlayer1.iTotal > _clPlayer2.iTotal)
                 {
                     MessageBox.Show("플레이어1이 이겼습니다");
                 }
-                else if(_strPlayer1.iTotal < _strPlayer2.iTotal)
+                else if(_clPlayer1.iTotal < _clPlayer2.iTotal)
                 {
                     MessageBox.Show("플레이어2이 이겼습니다");
                 }
