@@ -8,13 +8,18 @@ namespace ClassStudy_Game
 {
     class CPlayer
     {
-        //public int iSun = 0;
-        //public int iMoon = 0;
-        //public int iStar = 0;
+     
+        //생성자
+        public CPlayer()
+        {
+            int iTest = 1;  //class 사용할때 new 하면(생성되는 시점) 이쪽으로 옴
+        }
 
-        //public int iCount = 0;  //몇회 진행중?
-
-        //public int iTotal = 0;  //해,달,별 더한 값
+        //소멸자
+        ~CPlayer()
+        {
+            int iTest = 0;
+        }
 
 
         //값들을 더해서 계산

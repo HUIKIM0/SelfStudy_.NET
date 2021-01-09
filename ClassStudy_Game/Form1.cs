@@ -132,10 +132,14 @@ namespace ClassStudy_Game
         }
 
 
-        CPlayer cp = new CPlayer();  //class
+        
+        CPlayer cp; //class.   CPlayer cp = new CPlayer();
 
         private void Result()
         {
+
+            cp = new CPlayer();
+
             string strResult = string.Empty;  //빈 string공간
 
             int iCount = 0;   

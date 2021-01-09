@@ -162,6 +162,7 @@ namespace ClassStudy_Game
             // lboxNow
             // 
             this.lboxNow.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lboxNow.ForeColor = System.Drawing.SystemColors.Window;
             this.lboxNow.FormattingEnabled = true;
             this.lboxNow.ItemHeight = 15;
             this.lboxNow.Location = new System.Drawing.Point(24, 482);
