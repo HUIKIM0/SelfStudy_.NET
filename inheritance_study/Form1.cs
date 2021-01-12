@@ -16,5 +16,19 @@ namespace inheritance_study
         {
             InitializeComponent();
         }
+
+        private void btnOneCycle_Click(object sender, EventArgs e)
+        {
+            CBase cb = new CBase();   //class CBase
+
+
+
+            //Graphics g = pMain.CreateGraphics();   //panel에 그릴거야
+            //Pen p = new Pen(Color.Aqua);           //펜 생성
+
+            //g.DrawRectangle(p, 50, 50, 100, 150);    //펜,x좌표,y좌표,넓이,높이
+
+
+        }
     }
 }
