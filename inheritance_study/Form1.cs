@@ -19,14 +19,13 @@ namespace inheritance_study
 
         private void btnOneCycle_Click(object sender, EventArgs e)
         {
-            CBase cb = new CBase();   //class CBase
+            COneCycle COC = new COneCycle("외발 자전거");
+            lblName.Text = COC.strName;
 
-
-
-            //Graphics g = pMain.CreateGraphics();   //panel에 그릴거야
-            //Pen p = new Pen(Color.Aqua);           //펜 생성
-
-            //g.DrawRectangle(p, 50, 50, 100, 150);    //펜,x좌표,y좌표,넓이,높이
+            Graphics g = pMain.CreateGraphics();   //panel에 그릴거야
+            Pen p = COC.fPenInfo();
+            g.DrawRectangle(p, COC._rtSquare1);
+            g.DrawEllipse(p, COC._rtCircle1);
 
 
         }

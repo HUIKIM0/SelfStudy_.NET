@@ -10,10 +10,14 @@ namespace inheritance_study
 {
     class COneCycle : CBase
     {
+        /* class CBase
+           strName  이름
+           _Pen     펜
+        */
         public Rectangle _rtCircle1;   //바퀴
         public Rectangle _rtSquare1;   //몸통
 
-        //부모Class인 CBase에는 이름(strName)과 펜(_Pen)이 있음
+
 
         public COneCycle(string sName)  //생성자
         {
@@ -21,8 +25,14 @@ namespace inheritance_study
             _Pen = new Pen(Color.WhiteSmoke, 3);  //굵기는 3
 
             //★한칸에 30pexel로 계산
-            _rtCircle1 = new Rectangle(120, 150, 120, 120);
+            _rtCircle1 = new Rectangle(120, 150, 120, 120);  //바퀴 그려주기
+            _rtSquare1 = new Rectangle(150, 30, 60, 120);    //몸통 그려주기
 
+        }
+
+        public Pen fPenInfo()    //반환하는 형식 Pen형식
+        {
+            return _Pen;
         }
     }
 }

@@ -43,14 +43,14 @@ namespace inheritance_study
             this.pMain.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.pMain.Location = new System.Drawing.Point(30, 31);
             this.pMain.Name = "pMain";
-            this.pMain.Size = new System.Drawing.Size(664, 300);
+            this.pMain.Size = new System.Drawing.Size(664, 341);
             this.pMain.TabIndex = 0;
             // 
             // lblName
             // 
             this.lblName.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.lblName.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblName.Location = new System.Drawing.Point(27, 368);
+            this.lblName.Location = new System.Drawing.Point(27, 397);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(111, 25);
             this.lblName.TabIndex = 1;
@@ -59,7 +59,7 @@ namespace inheritance_study
             // 
             // btnOneCycle
             // 
-            this.btnOneCycle.Location = new System.Drawing.Point(163, 368);
+            this.btnOneCycle.Location = new System.Drawing.Point(159, 397);
             this.btnOneCycle.Name = "btnOneCycle";
             this.btnOneCycle.Size = new System.Drawing.Size(173, 25);
             this.btnOneCycle.TabIndex = 2;
@@ -69,7 +69,7 @@ namespace inheritance_study
             // 
             // btnCycle
             // 
-            this.btnCycle.Location = new System.Drawing.Point(342, 368);
+            this.btnCycle.Location = new System.Drawing.Point(338, 397);
             this.btnCycle.Name = "btnCycle";
             this.btnCycle.Size = new System.Drawing.Size(173, 25);
             this.btnCycle.TabIndex = 2;
@@ -78,7 +78,7 @@ namespace inheritance_study
             // 
             // btnCar
             // 
-            this.btnCar.Location = new System.Drawing.Point(521, 368);
+            this.btnCar.Location = new System.Drawing.Point(517, 397);
             this.btnCar.Name = "btnCar";
             this.btnCar.Size = new System.Drawing.Size(173, 25);
             this.btnCar.TabIndex = 2;
@@ -87,7 +87,7 @@ namespace inheritance_study
             // 
             // btnLeft
             // 
-            this.btnLeft.Location = new System.Drawing.Point(247, 414);
+            this.btnLeft.Location = new System.Drawing.Point(242, 442);
             this.btnLeft.Name = "btnLeft";
             this.btnLeft.Size = new System.Drawing.Size(173, 38);
             this.btnLeft.TabIndex = 2;
@@ -96,7 +96,7 @@ namespace inheritance_study
             // 
             // btnRight
             // 
-            this.btnRight.Location = new System.Drawing.Point(440, 414);
+            this.btnRight.Location = new System.Drawing.Point(438, 442);
             this.btnRight.Name = "btnRight";
             this.btnRight.Size = new System.Drawing.Size(173, 38);
             this.btnRight.TabIndex = 2;

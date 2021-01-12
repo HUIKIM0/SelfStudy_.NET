@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lotto_while", "Lotto_while\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassStudy_Game", "ClassStudy_Game\ClassStudy_Game.csproj", "{DA7CC3C3-6F63-4F2F-BABB-1D3BCCE29F32}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "inheritance_study", "inheritance_study\inheritance_study.csproj", "{D447AFA9-7AEA-4235-B362-553646E2BD0E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{DA7CC3C3-6F63-4F2F-BABB-1D3BCCE29F32}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA7CC3C3-6F63-4F2F-BABB-1D3BCCE29F32}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA7CC3C3-6F63-4F2F-BABB-1D3BCCE29F32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D447AFA9-7AEA-4235-B362-553646E2BD0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D447AFA9-7AEA-4235-B362-553646E2BD0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D447AFA9-7AEA-4235-B362-553646E2BD0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D447AFA9-7AEA-4235-B362-553646E2BD0E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
