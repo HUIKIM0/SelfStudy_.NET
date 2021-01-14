@@ -16,7 +16,7 @@ namespace inheritance_study
 
         public CBase()  //생성자 (class랑 이름이 같아야)
         {
-            _Pen = new Pen(Color.Aqua);
+            _Pen = new Pen(Color.Aqua);  
             
         }
     }

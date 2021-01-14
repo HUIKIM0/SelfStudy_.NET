@@ -24,8 +24,8 @@ namespace inheritance_study
 
             Graphics g = pMain.CreateGraphics();   //panel에 그릴거야
             Pen p = COC.fPenInfo();
-            g.DrawRectangle(p, COC._rtSquare1);
-            g.DrawEllipse(p, COC._rtCircle1);
+            g.DrawRectangle(p, COC._rtSquareBtn1);
+            g.DrawEllipse(p, COC._rtCircleBtn1);
 
 
         }
