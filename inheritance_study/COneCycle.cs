@@ -21,7 +21,7 @@ namespace inheritance_study
 
         public COneCycle(string sName)  //생성자
         {
-            strName = sName;
+            strName = sName;   //이름
             _Pen = new Pen(Color.WhiteSmoke, 3);  //굵기는 3
 
             //★한칸에 30pexel로 계산
