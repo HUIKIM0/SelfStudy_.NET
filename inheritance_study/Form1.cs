@@ -108,16 +108,59 @@ namespace inheritance_study
         private void btnRight_Click(object sender, EventArgs e)
         {
             fClearPanel();
-            fCOneCycleDraw();
-            _COC.fMove(5);
+
+            switch (lblName.Text)
+            {
+                case "외발 자전거":
+                    fClearPanel();
+                    fCOneCycleDraw();
+                    _COC.fMove(5);
+                    break;
+
+                case "자전거":
+                    fClearPanel();
+                    fCCycleDraw();
+                    _CC.fMove(5);
+                    break;
+
+                case "자동차":
+                    fClearPanel();
+                    fCCarDraw();
+                    _CCar.fMove(5);
+                    break;
+
+                default:
+                    break;
+            }
+
             
         }
 
         private void btnLeft_Click(object sender, EventArgs e)
         {
-            fClearPanel();
-            fCOneCycleDraw();
-            _COC.fMove(-5);
+            switch (lblName.Text)
+            {
+                case "외발 자전거":
+                    fClearPanel();
+                    fCOneCycleDraw();
+                    _COC.fMove(-5);
+                    break;
+
+                case "자전거":
+                    fClearPanel();
+                    fCCycleDraw();
+                    _CC.fMove(-5);
+                    break;
+
+                case "자동차":
+                    fClearPanel();
+                    fCCarDraw();
+                    _CCar.fMove(-5);
+                    break;
+
+                default:
+                    break;
+            }
         }
     }
 }

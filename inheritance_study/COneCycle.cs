@@ -35,7 +35,7 @@ namespace inheritance_study
             return _Pen;
         }
 
-
+        // ****************움직이게 하기***************
         public void fMove(int iMove)
         {
             fMove_rtCircle1(iMove);

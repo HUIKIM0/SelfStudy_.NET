@@ -29,5 +29,25 @@ namespace inheritance_study
 
 
         }
+
+        public new void fMove(int iMove)
+        {
+            fMove_rtCircle1(iMove);
+            fMove_rtCircle2(iMove);
+            fMove_rtSquare1(iMove);
+            fMove_rtSuare2(iMove);
+        }
+
+        
+        protected void fMove_rtSuare2(int iMove)
+        {
+
+                Point oPoint = _rtSquare2.Location;
+
+                oPoint.X = oPoint.X + iMove;
+
+                _rtSquare2.Location = oPoint;
+            
+        }
     }
 }
