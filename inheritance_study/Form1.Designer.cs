@@ -85,6 +85,7 @@ namespace inheritance_study
             this.btnCar.TabIndex = 2;
             this.btnCar.Text = "3단계: 자동차";
             this.btnCar.UseVisualStyleBackColor = true;
+            this.btnCar.Click += new System.EventHandler(this.btnCar_Click);
             // 
             // btnLeft
             // 
@@ -94,6 +95,7 @@ namespace inheritance_study
             this.btnLeft.TabIndex = 2;
             this.btnLeft.Text = "<--";
             this.btnLeft.UseVisualStyleBackColor = true;
+            this.btnLeft.Click += new System.EventHandler(this.btnLeft_Click);
             // 
             // btnRight
             // 
@@ -103,6 +105,7 @@ namespace inheritance_study
             this.btnRight.TabIndex = 2;
             this.btnRight.Text = "-->";
             this.btnRight.UseVisualStyleBackColor = true;
+            this.btnRight.Click += new System.EventHandler(this.btnRight_Click);
             // 
             // Form1
             // 

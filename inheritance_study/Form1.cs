@@ -14,6 +14,7 @@ namespace inheritance_study
     {
         COneCycle _COC;
         CCycle _CC;
+        CCar _CCar;
 
         public Form1()
         {
@@ -27,6 +28,7 @@ namespace inheritance_study
             lblName.Text = "-";
             _COC = new COneCycle("외발 자전거");  //생성자가 public COneCycle(string sName)
             _CC = new CCycle("자전거");
+            _CCar = new CCar("자동차");
         }
 
         private void btnOneCycle_Click(object sender, EventArgs e)
@@ -45,8 +47,8 @@ namespace inheritance_study
 
             Pen p = _COC.fPenInfo();   //COneCycle의 펜
 
-            g.DrawRectangle(p, _COC._rtSquareBtn1);
-            g.DrawEllipse(p, _COC._rtCircleBtn1);
+            g.DrawRectangle(p, _COC._rtSquare1);
+            g.DrawEllipse(p, _COC._rtCircle1);
         }
 
 
@@ -66,17 +68,56 @@ namespace inheritance_study
 
             Pen p = _CC.fPenInfo();   //COneCycle의 펜
 
-            g.DrawRectangle(p, _CC._rtSquareBtn2);
-            g.DrawEllipse(p, _CC._rtCircleBtn2);
-            g.DrawEllipse(p, _CC._rtCircleBtn22);
+            g.DrawRectangle(p, _CC._rtSquare1);
+            g.DrawEllipse(p, _CC._rtCircle1);
+            g.DrawEllipse(p, _CC._rtCircle2);
 
         }
+
+
+        private void btnCar_Click(object sender, EventArgs e)
+        {
+            fClearPanel();
+            fCCarDraw();
+        }
+
+        //CCar에 대한 그림을 그려줌
+        private void fCCarDraw()
+        {
+            lblName.Text = _CCar.strName;
+
+            Graphics g = pMain.CreateGraphics();   //panel에 그릴거야
+
+            Pen p = _CCar.fPenInfo();   //COneCycle의 펜
+
+            g.DrawRectangle(p, _CCar._rtSquare1);
+            g.DrawRectangle(p, _CCar._rtSquare2);
+            g.DrawEllipse(p, _CCar._rtCircle1);
+            g.DrawEllipse(p, _CCar._rtCircle2);
+
+        }
+
 
         //Panel 지우고 다시 그리게 하게끔
         private void fClearPanel()
         {
             pMain.Invalidate();
             Refresh();
+        }
+
+        private void btnRight_Click(object sender, EventArgs e)
+        {
+            fClearPanel();
+            fCOneCycleDraw();
+            _COC.fMove(5);
+            
+        }
+
+        private void btnLeft_Click(object sender, EventArgs e)
+        {
+            fClearPanel();
+            fCOneCycleDraw();
+            _COC.fMove(-5);
         }
     }
 }
