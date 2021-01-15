@@ -75,6 +75,7 @@ namespace inheritance_study
             this.btnCycle.TabIndex = 2;
             this.btnCycle.Text = "2단계: 자전거";
             this.btnCycle.UseVisualStyleBackColor = true;
+            this.btnCycle.Click += new System.EventHandler(this.btnCycle_Click);
             // 
             // btnCar
             // 
