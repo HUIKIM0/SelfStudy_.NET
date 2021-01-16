@@ -34,29 +34,17 @@ namespace inheritance_study
             _rtSquare1 = new Rectangle(60, 90, 240, 60);    //몸통 그려주기
         }
 
-        public Pen fPenInfo()    //반환하는 형식 Pen형식
-        {
-            return _Pen;
-        }
+
 
         // ****************움직이게 하기***************
-        public void fMove(int iMove)
+        public override void fMove(int iMove)
         {
-            fMove_rtCircle1(iMove);
-            fMove_rtCircle2(iMove);
-            fMove_rtSquare1(iMove);
+            base.fMove;  //COneCycle(부모)에 있는 fMove
+
+            fMove_rtCircle2(iMove);   
         }
 
-        protected void fMove_rtCircle1(int iMove)
-        {
-            //Point를 이용. _rtCircle1의 현재 좌표값을 가져옴
-            Point oPoint = _rtCircle1.Location;
 
-            //X좌표 = X좌표+움직이는 값 만큼
-            oPoint.X = oPoint.X + iMove;
-
-            _rtCircle1.Location = oPoint;
-        }
 
         protected void fMove_rtCircle2(int iMove)
         {
@@ -69,13 +57,6 @@ namespace inheritance_study
             _rtCircle2.Location = oPoint;
         }
 
-        protected void fMove_rtSquare1(int iMove)
-        {
-            Point oPoint = _rtSquare1.Location;
 
-            oPoint.X = oPoint.X + iMove;
-
-            _rtSquare1.Location = oPoint;
-        }
     }
 }

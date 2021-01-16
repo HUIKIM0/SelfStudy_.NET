@@ -36,7 +36,7 @@ namespace inheritance_study
         }
 
         // ****************움직이게 하기***************
-        public void fMove(int iMove)
+        public virtual void fMove(int iMove)
         {
             fMove_rtCircle1(iMove);
             fMove_rtSquare1(iMove);
