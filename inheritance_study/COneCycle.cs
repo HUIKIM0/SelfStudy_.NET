@@ -18,8 +18,8 @@ namespace inheritance_study
         public Rectangle _rtSquare1;   //몸통
 
 
-
-        public COneCycle(string sName)  //생성자
+        //생성자
+        public COneCycle(string sName)  
         {
             strName = sName;   //이름
             _Pen = new Pen(Color.WhiteSmoke, 3);  //굵기는 3
@@ -30,10 +30,8 @@ namespace inheritance_study
 
         }
 
-        public Pen fPenInfo()    //반환하는 형식 Pen형식
-        {
-            return _Pen;
-        }
+
+        
 
         // ****************움직이게 하기***************
         public virtual void fMove(int iMove)
@@ -60,6 +58,27 @@ namespace inheritance_study
             oPoint.X = oPoint.X + iMove;
 
             _rtSquare1.Location = oPoint;
+        }
+
+
+        //Pen에 대한 정보를 받으면 반환
+        public Pen fPenInfo()    
+        {
+            // _Pen = new Pen(Color.White,3);
+            return _Pen;
+        }
+
+
+        public Pen fPenInfo(Color oColor)
+        {
+            _Pen = new Pen(oColor);
+            return _Pen;
+        }
+
+        public Pen fPenInfo(Color oColor, int iWidth)
+        {
+            _Pen = new Pen(oColor, iWidth);
+            return _Pen;
         }
     }
 }

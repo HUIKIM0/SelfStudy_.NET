@@ -46,7 +46,7 @@ namespace inheritance_study
 
             Graphics g = pMain.CreateGraphics();   //panel에 그릴거야
 
-            Pen p = _COC.fPenInfo();   //COneCycle의 펜
+            Pen p = _COC.fPenInfo(Color.Pink,2);   //COneCycle의 펜
 
             g.DrawRectangle(p, _COC._rtSquare1);
             g.DrawEllipse(p, _COC._rtCircle1);
@@ -67,7 +67,7 @@ namespace inheritance_study
 
             Graphics g = pMain.CreateGraphics();   //panel에 그릴거야
 
-            Pen p = _CC.fPenInfo();   //COneCycle의 펜
+            Pen p = _CC.fPenInfo(Color.Purple,8);   //COneCycle의 펜
 
             g.DrawRectangle(p, _CC._rtSquare1);
             g.DrawEllipse(p, _CC._rtCircle1);
@@ -89,7 +89,7 @@ namespace inheritance_study
 
             Graphics g = pMain.CreateGraphics();   //panel에 그릴거야
 
-            Pen p = _CCar.fPenInfo();   //COneCycle의 펜
+            Pen p = _CCar.fPenInfo(Color.Orange,5);   //COneCycle의 펜
 
             g.DrawRectangle(p, _CCar._rtSquare1);
             g.DrawRectangle(p, _CCar._rtSquare2);
@@ -113,19 +113,16 @@ namespace inheritance_study
             switch (lblName.Text)
             {
                 case "외발 자전거":
-                    fClearPanel();
-                    fCOneCycleDraw();
                     _COC.fMove(5);
+                    fCOneCycleDraw();
                     break;
 
                 case "자전거":
-                    fClearPanel();
-                    fCCycleDraw();
                     _CC.fMove(5);
+                    fCCycleDraw();
                     break;
 
                 case "자동차":
-                    fClearPanel();
                     fCCarDraw();
                     _CCar.fMove(5);
                     break;
@@ -139,22 +136,22 @@ namespace inheritance_study
 
         private void btnLeft_Click(object sender, EventArgs e)
         {
+            fClearPanel();
+            _COC.fPenInfo(Color.Gold,3);
+
             switch (lblName.Text)
             {
                 case "외발 자전거":
-                    fClearPanel();
-                    fCOneCycleDraw();
                     _COC.fMove(-5);
+                    fCOneCycleDraw();
                     break;
 
                 case "자전거":
-                    fClearPanel();
-                    fCCycleDraw();
                     _CC.fMove(-5);
+                    fCCycleDraw();
                     break;
 
                 case "자동차":
-                    fClearPanel();
                     fCCarDraw();
                     _CCar.fMove(-5);
                     break;

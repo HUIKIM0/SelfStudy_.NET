@@ -16,6 +16,7 @@ namespace inheritance_study
            strName 이름(CBase)
            _Pen    펜(CBase)
            
+           class COneCycle
            Rectangle _rtCircle1   바퀴
            Rectangle _rtSquare1  몸통 
         */
@@ -23,6 +24,7 @@ namespace inheritance_study
         public Rectangle _rtCircle2;  //바퀴2 
 
 
+        //생성자
         public CCycle(string sName) : base(sName)
         {
             strName = sName;   //이름
@@ -39,7 +41,7 @@ namespace inheritance_study
         // ****************움직이게 하기***************
         public override void fMove(int iMove)
         {
-            base.fMove;  //COneCycle(부모)에 있는 fMove
+            base.fMove(iMove);  //COneCycle(부모)에 있는 fMove(int iMove)
 
             fMove_rtCircle2(iMove);   
         }

@@ -10,13 +10,15 @@ namespace inheritance_study
            _Pen     펜
 
            class CCycle
-           _rtCircle1 바퀴
-           _rtCircle2 바퀴
+           _rtCircle1 바퀴   (COneCycle)
+           _rtCircle2 바퀴   (COneCycle)
            __rtSquare1 몸통
         */
 
         public Rectangle _rtSquare2; //위로 올라갈 몸통
 
+
+        //생성자
         public CCar(string sName) : base(sName)
         {
             strName = sName;
@@ -30,11 +32,10 @@ namespace inheritance_study
 
         }
 
-        public new void fMove(int iMove)
+        public override void fMove(int iMove)
         {
-            fMove_rtCircle1(iMove);
-            fMove_rtCircle2(iMove);
-            fMove_rtSquare1(iMove);
+            base.fMove(iMove);
+
             fMove_rtSuare2(iMove);
         }
 
