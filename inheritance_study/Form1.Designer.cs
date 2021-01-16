@@ -119,6 +119,7 @@ namespace inheritance_study
             this.Controls.Add(this.btnOneCycle);
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.pMain);
+            this.KeyPreview = true;
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);

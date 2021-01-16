@@ -12,7 +12,8 @@ namespace inheritance_study
 {
     public partial class Form1 : Form
     {
-        COneCycle _COC;
+        //class
+        COneCycle _COC;    
         CCycle _CC;
         CCar _CCar;
 

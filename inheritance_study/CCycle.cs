@@ -8,18 +8,22 @@ using System.Drawing;
 
 namespace inheritance_study
 {
-    class CCycle : CBase
+    class CCycle : COneCycle
     {
 
-        /* class CBase
-           strName  이름
-           _Pen     펜
+        /*
+           class COneCycle
+           strName 이름(CBase)
+           _Pen    펜(CBase)
+           
+           Rectangle _rtCircle1   바퀴
+           Rectangle _rtSquare1  몸통 
         */
-        public Rectangle _rtCircle1;   //바퀴1
-        public Rectangle _rtCircle2;  //바퀴2
-        public Rectangle _rtSquare1;   //몸통
 
-        public CCycle(string sName)
+        public Rectangle _rtCircle2;  //바퀴2 
+
+
+        public CCycle(string sName) : base(sName)
         {
             strName = sName;   //이름
             _Pen = new Pen(Color.Black, 3);  //굵기는 3
