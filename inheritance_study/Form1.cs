@@ -32,6 +32,22 @@ namespace inheritance_study
             _CCar = new CCar("자동차");
         }
 
+
+        //Form1.Designer에서 this.KeyDown += 해준거
+        private void Form1_KeyDown(object sender, System.Windows.Forms.KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Q)
+            {
+                fMoving(-5);
+            }
+            else if(e.KeyCode == Keys.W)
+            {
+                fMoving(5);
+            }
+        }
+
+
+
         private void btnOneCycle_Click(object sender, EventArgs e)
         {
             fClearPanel();
@@ -106,54 +122,38 @@ namespace inheritance_study
             Refresh();
         }
 
+
+
         private void btnRight_Click(object sender, EventArgs e)
         {
-            fClearPanel();
-
-            switch (lblName.Text)
-            {
-                case "외발 자전거":
-                    _COC.fMove(5);
-                    fCOneCycleDraw();
-                    break;
-
-                case "자전거":
-                    _CC.fMove(5);
-                    fCCycleDraw();
-                    break;
-
-                case "자동차":
-                    fCCarDraw();
-                    _CCar.fMove(5);
-                    break;
-
-                default:
-                    break;
-            }
-
-            
+            fMoving(5);
         }
 
         private void btnLeft_Click(object sender, EventArgs e)
         {
+            fMoving(-5);
+        }
+
+
+        private void fMoving(int iMove)
+        {
             fClearPanel();
-            _COC.fPenInfo(Color.Gold,3);
 
             switch (lblName.Text)
             {
                 case "외발 자전거":
-                    _COC.fMove(-5);
+                    _COC.fMove(iMove);
                     fCOneCycleDraw();
                     break;
 
                 case "자전거":
-                    _CC.fMove(-5);
+                    _CC.fMove(iMove);
                     fCCycleDraw();
                     break;
 
                 case "자동차":
                     fCCarDraw();
-                    _CCar.fMove(-5);
+                    _CCar.fMove(iMove);
                     break;
 
                 default:
