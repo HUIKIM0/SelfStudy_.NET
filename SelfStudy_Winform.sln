@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassStudy_Game", "ClassStu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "inheritance_study", "inheritance_study\inheritance_study.csproj", "{D447AFA9-7AEA-4235-B362-553646E2BD0E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Partial_discount", "Partial_discount\Partial_discount.csproj", "{B917688A-DD6A-4E81-AF4F-24717D7645E1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{D447AFA9-7AEA-4235-B362-553646E2BD0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D447AFA9-7AEA-4235-B362-553646E2BD0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D447AFA9-7AEA-4235-B362-553646E2BD0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B917688A-DD6A-4E81-AF4F-24717D7645E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B917688A-DD6A-4E81-AF4F-24717D7645E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B917688A-DD6A-4E81-AF4F-24717D7645E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B917688A-DD6A-4E81-AF4F-24717D7645E1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
