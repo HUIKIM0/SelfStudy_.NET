@@ -8,13 +8,13 @@ namespace Partial_discount
 {
     public enum EnumItem
     {
-        물,
-        음료수,
-        고기,
-        과일,
-        냉동식품,
-        즉석식품,
-        라면,
+        물 = 600,
+        음료수 = 2300,
+        고기 = 12000,
+        과일 = 5000,
+        냉동식품 = 7800,
+        즉석식품 = 1200,
+        라면 = 4800,
     }
 
     public enum EnumRate

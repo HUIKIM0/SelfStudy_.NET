@@ -37,11 +37,27 @@ namespace Partial_discount
             }
         }
 
+        //담기 버튼을 누르면 물건이름 할인율 개수 값이!
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            _Data.fDataReset();  //초기화 시키고 시작
+
             _Data.StrItem = cboxItem.Text;
-            _Data.iRate = int.Parse(cboxRate.Text);
-            _Data.iCount = (int)numCount.Value;  //NumericUpDown는 Value
+           // _Data.IRate = int.Parse(cboxRate.Text);
+            _Data.IRate = (int)Enum.Parse(typeof(EnumRate), cboxRate.Text);
+            _Data.ICount = (int)numCount.Value;    //NumericUpDown은 Value
+
+            if(!string.IsNullOrEmpty(_Data.StrErrorName))  //strErrorName에 값이 있으면 !
+            {
+                tboxErrorMsg.Text = _Data.StrErrorName;
+                return;  //수식 계산 안하고 넘긴다. 메세지박스에만 적고 넘긴다
+            }
+
+            double dPrice = _Data.fItemPrice();
+            lboxItem.Items.Add(_Data.fResult(dPrice));
+
+            _Data.Total = dPrice;  //dPrice가 value. cData의 Total함수로 가면 계산됨
+            tboxResult.Text = _Data.Total.ToString()+"원";
         }
     }
 }
