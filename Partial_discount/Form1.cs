@@ -12,6 +12,8 @@ namespace Partial_discount
 {
     public partial class Form1 : Form
     {
+        cData _Data = new cData();
+
         public Form1()
         {
             InitializeComponent();
@@ -28,6 +30,18 @@ namespace Partial_discount
             {
                 cboxItem.Items.Add(Eitem.ToString());
             }
+
+            foreach (EnumRate Eitem in (EnumRate[])Enum.GetValues(typeof(EnumRate)))
+            {
+                cboxRate.Items.Add(Eitem.ToString());
+            }
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            _Data.StrItem = cboxItem.Text;
+            _Data.iRate = int.Parse(cboxRate.Text);
+            _Data.iCount = (int)numCount.Value;  //NumericUpDown는 Value
         }
     }
 }

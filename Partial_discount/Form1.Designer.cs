@@ -109,6 +109,7 @@ namespace Partial_discount
             this.btnAdd.TabIndex = 4;
             this.btnAdd.Text = "담기";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // tboxResult
             // 
