@@ -26,11 +26,13 @@ namespace Partial_discount
             but EnumItem[]은 배열형태 -> EnumItem배열 형태로 형변환을 해야함*/
             EnumItem[] ei = (EnumItem[])Enum.GetValues(typeof(EnumItem));
 
+            //물건
             foreach (EnumItem Eitem in ei)
             {
                 cboxItem.Items.Add(Eitem.ToString());
             }
 
+            //할인
             foreach (EnumRate Eitem in (EnumRate[])Enum.GetValues(typeof(EnumRate)))
             {
                 cboxRate.Items.Add(Eitem.ToString());
@@ -43,11 +45,10 @@ namespace Partial_discount
             _Data.fDataReset();  //초기화 시키고 시작
 
             _Data.StrItem = cboxItem.Text;
-           // _Data.IRate = int.Parse(cboxRate.Text);
-            _Data.IRate = (int)Enum.Parse(typeof(EnumRate), cboxRate.Text);
+            _Data.IRate = (int)Enum.Parse(typeof(EnumRate), cboxRate.Text);   //EnumRate의 할인_3 = 3에서 3만 가져오고 싶어서
             _Data.ICount = (int)numCount.Value;    //NumericUpDown은 Value
 
-            if(!string.IsNullOrEmpty(_Data.StrErrorName))  //strErrorName에 값이 있으면 !
+            if(!string.IsNullOrEmpty(_Data.StrErrorName))  //strErrorName가 lsNullOrEmpty가 아니면 !
             {
                 tboxErrorMsg.Text = _Data.StrErrorName;
                 return;  //수식 계산 안하고 넘긴다. 메세지박스에만 적고 넘긴다
