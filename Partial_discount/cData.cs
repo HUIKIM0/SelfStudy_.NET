@@ -24,6 +24,9 @@ namespace Partial_discount
             }
         }
 
+
+        private string _strErrorName = string.Empty;
+
         public string StrItem
         {
             //get
@@ -96,10 +99,9 @@ namespace Partial_discount
         }
 
 
-        private string _strErrorName = string.Empty;
         public string StrErrorName 
         {
-            get => _strErrorName; 
+            get => _strErrorName;
             //set => _strErrorName = value;   에러메시지를 외부에서 못적게
         }
      
