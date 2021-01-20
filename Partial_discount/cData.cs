@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace Partial_discount
 {
+    //내부 변수들은 _
+
     /* 변수 */
     partial class cData
     {
