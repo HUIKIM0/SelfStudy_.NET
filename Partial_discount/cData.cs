@@ -119,7 +119,7 @@ namespace Partial_discount
                 //EnumClass의 EnumItem은 물 = 600 /  할인_3 = 3 이런식인데, 가격인 숫자만 가져오고 싶어서
                 iItemPrice = (int)Enum.Parse(typeof(EnumItem), _strItem);
 
-                //전체가격 - 할인된가격(원가 * 할인퍼센트 / 100)
+                //전체가격 - 할인들어가는 금액(원가 * 할인퍼센트 / 100)
                 dPrice = iItemPrice - Math.Round((double)iItemPrice * (double)_iRate / 100, 2);
             }
 
