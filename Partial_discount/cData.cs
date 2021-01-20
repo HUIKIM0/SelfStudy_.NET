@@ -110,16 +110,16 @@ namespace Partial_discount
     {
         public double fItemPrice()
         {
-            double dPrice = 0;
-            int iItemPrice = 0;
+            int iItemPrice = 0;  
+            double dPrice = 0;   
 
-            if(string.IsNullOrEmpty(_strErrorName))  //에러메시지가 없으면 정상 값들을 받았다는 뜻
+            if (string.IsNullOrEmpty(_strErrorName))  //에러메시지가 없으면 정상 값들을 받았다는 뜻
             {
                 //Enum(string) 값이 가지고 있는 숫자값(int)이 뭔지 받아올 수 있음  Enum.Parse(typeof() , string형태)
-                //EnumClass의 EnumItem은 물 = 600 /  할인_3 = 3 이런식임
+                //EnumClass의 EnumItem은 물 = 600 /  할인_3 = 3 이런식인데, 가격인 숫자만 가져오고 싶어서
                 iItemPrice = (int)Enum.Parse(typeof(EnumItem), _strItem);
 
-                //전체가격 - 할인된가격
+                //전체가격 - 할인된가격(원가 * 할인퍼센트 / 100)
                 dPrice = iItemPrice - Math.Round((double)iItemPrice * (double)_iRate / 100, 2);
             }
 
