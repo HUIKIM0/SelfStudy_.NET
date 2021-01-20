@@ -32,7 +32,7 @@ namespace Partial_discount
                 cboxItem.Items.Add(Eitem.ToString());
             }
 
-            //할인
+            //할인율
             foreach (EnumRate Eitem in (EnumRate[])Enum.GetValues(typeof(EnumRate)))
             {
                 cboxRate.Items.Add(Eitem.ToString());
@@ -54,10 +54,10 @@ namespace Partial_discount
                 return;  //수식 계산 안하고 넘긴다. 메세지박스에만 적고 넘긴다
             }
 
-            double dPrice = _Data.fItemPrice();
+            double dPrice = _Data.fItemPrice(); 
             lboxItem.Items.Add(_Data.fResult(dPrice));
 
-            _Data.Total = dPrice;  //dPrice가 value. cData의 Total함수로 가면 계산됨
+            _Data.Total = dPrice;  //dPrice(할인적용된 최종가격)가 value
             tboxResult.Text = _Data.Total.ToString()+"원";
         }
     }
