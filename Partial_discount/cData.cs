@@ -37,9 +37,9 @@ namespace Partial_discount
                     _strErrorName = "물건이 선택되지 않았습니다";
 
                 }
-                else
+                else   
                 {
-                    _strItem = value;
+                    _strItem = value;     //물건이 선택되었으면 값 넣어줌
                 }
 
             }
@@ -105,7 +105,7 @@ namespace Partial_discount
      
     }
 
-    /* 계산 */
+    /* 할인율 계산 */
     partial class cData
     {
         public double fItemPrice()
@@ -116,7 +116,7 @@ namespace Partial_discount
             if(string.IsNullOrEmpty(_strErrorName))  //에러메시지가 없으면 정상 값들을 받았다는 뜻
             {
                 //Enum(string) 값이 가지고 있는 숫자값(int)이 뭔지 받아올 수 있음  Enum.Parse(typeof() , string형태)
-                //EnumClass는 물 = 600 /  할인_3 = 3 이런식으로 되어있다
+                //EnumClass의 EnumItem은 물 = 600 /  할인_3 = 3 이런식임
                 iItemPrice = (int)Enum.Parse(typeof(EnumItem), _strItem);
 
                 //전체가격 - 할인된가격
@@ -126,6 +126,8 @@ namespace Partial_discount
             return dPrice * _iCount;  //할인된가격 * 물건개수
         }
     }
+
+
 
 
     /* 문자열 */
