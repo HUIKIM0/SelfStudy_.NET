@@ -13,7 +13,7 @@ namespace ClassStudy_Game
 {
 
 
-    //struct -> 필드를 초기화 할 수 없음
+    //struct -> 필드를 초기화 할 수 없음★
     struct structPlayer
     {
 
@@ -37,7 +37,6 @@ namespace ClassStudy_Game
         //{
         //    return string.Format("{0}회) 해:{1}, 달{2}, 별{3} => 합계는 {4} 입니다.", iCount, iSun, iMoon, iStar, iTotal);
         //}
-
     }
 
 
