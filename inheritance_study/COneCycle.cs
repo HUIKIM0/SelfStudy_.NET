@@ -64,7 +64,7 @@ namespace inheritance_study
         //Pen에 대한 정보를 받으면 반환
         public Pen fPenInfo()    
         {
-            // _Pen = new Pen(Color.White,3);
+            // _Pen = new Pen(Color.WhiteSmoke,3);
             return _Pen;
         }
 

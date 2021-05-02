@@ -62,7 +62,7 @@ namespace inheritance_study
 
             Graphics g = pMain.CreateGraphics();   //panel에 그릴거야
 
-            Pen p = _COC.fPenInfo(Color.Pink,2);   //COneCycle의 펜
+            Pen p = _COC.fPenInfo(Color.Pink,3);   //COneCycle의 펜
 
             g.DrawRectangle(p, _COC._rtSquare1);
             g.DrawEllipse(p, _COC._rtCircle1);
