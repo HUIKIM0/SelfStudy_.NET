@@ -18,16 +18,17 @@ namespace inheritance_study
         public Rectangle _rtSquare1;   //몸통
 
 
+
         //생성자
         public COneCycle(string sName)  
         {
             strName = sName;   //이름
+
             _Pen = new Pen(Color.WhiteSmoke, 3);  //굵기는 3
 
             //★한칸에 30pexel로 계산
             _rtCircle1 = new Rectangle(120, 150, 120, 120);  //바퀴 그려주기
             _rtSquare1 = new Rectangle(150, 30, 60, 120);    //몸통 그려주기
-
         }
 
 

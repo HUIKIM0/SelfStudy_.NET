@@ -17,6 +17,7 @@ namespace inheritance_study
         CCycle _CC;
         CCar _CCar;
 
+
         public Form1()
         {
             InitializeComponent();
