@@ -25,15 +25,21 @@ namespace inheritance_study
 
 
         //생성자
+        //base(sName) <- COneCycle에 있는 생성자가 매개변수가 있음(string sName). 상속 받았으므로 생성자에도 영향이 미친다
         public CCycle(string sName) : base(sName)
         {
             strName = sName;   //이름
             _Pen = new Pen(Color.Black, 3);  //굵기는 3
 
             //★한칸에 30pexel로 계산
+            //: base(sName) 해줬기 때문에 _rtCircle1, _rtSquare1 다시 생성 안해줘도 됨(상속)
+            //but _rtCircle1과 _rtSquare1의 위치좌표값을 달리함. 그래서 new 로 재생성
+
             _rtCircle1 = new Rectangle(30, 150, 120, 120);  //바퀴 그려주기
-            _rtCircle2 = new Rectangle(210, 150, 120, 120);
             _rtSquare1 = new Rectangle(60, 90, 240, 60);    //몸통 그려주기
+
+            _rtCircle2 = new Rectangle(210, 150, 120, 120);  //바퀴 그려주기
+
         }
 
 
