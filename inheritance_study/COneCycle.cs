@@ -27,8 +27,8 @@ namespace inheritance_study
             _Pen = new Pen(Color.WhiteSmoke, 3);  //굵기는 3
 
             //★한칸에 30pexel로 계산
-            _rtCircle1 = new Rectangle(120, 150, 120, 120);  //바퀴 그려주기
-            _rtSquare1 = new Rectangle(150, 30, 60, 120);    //몸통 그려주기
+            _rtCircle1 = new Rectangle(120, 150, 120, 120);  //바퀴 좌표
+            _rtSquare1 = new Rectangle(150, 30, 60, 120);    //몸통 좌표
         }
 
 
@@ -49,6 +49,7 @@ namespace inheritance_study
             //X좌표 = X좌표+움직이는 값 만큼
             oPoint.X = oPoint.X + iMove;
 
+            //바뀐 x좌표값으로 위치 바꿈
             _rtCircle1.Location = oPoint;
         }
 

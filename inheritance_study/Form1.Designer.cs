@@ -122,12 +122,14 @@ namespace inheritance_study
             this.KeyPreview = true;
             this.Name = "Form1";
             this.Text = "Form1";
-            this.KeyDown += Form1_KeyDown;
             this.ResumeLayout(false);
+
+            this.KeyDown += Form1_KeyDown;      //Form1.cs에 내용 있
 
         }
 
-       
+
+
 
         #endregion
 

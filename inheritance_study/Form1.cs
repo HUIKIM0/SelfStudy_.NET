@@ -52,6 +52,7 @@ namespace inheritance_study
         private void btnOneCycle_Click(object sender, EventArgs e)
         {
             fClearPanel();
+
             fCOneCycleDraw();
         }
 
@@ -65,7 +66,7 @@ namespace inheritance_study
 
             Pen p = _COC.fPenInfo(Color.Pink,3);   //COneCycle의 펜
 
-            g.DrawRectangle(p, _COC._rtSquare1);
+            g.DrawRectangle(p, _COC._rtSquare1);   // COneCycle에서 받아온 좌표로 찐 그리기
             g.DrawEllipse(p, _COC._rtCircle1);
         }
 
@@ -73,6 +74,7 @@ namespace inheritance_study
         private void btnCycle_Click(object sender, EventArgs e)
         {
             fClearPanel();
+
             fCCycleDraw();
 
         }
@@ -96,6 +98,7 @@ namespace inheritance_study
         private void btnCar_Click(object sender, EventArgs e)
         {
             fClearPanel();
+
             fCCarDraw();
         }
 
@@ -124,7 +127,7 @@ namespace inheritance_study
         }
 
 
-
+        
         private void btnRight_Click(object sender, EventArgs e)
         {
             fMoving(5);
@@ -136,15 +139,15 @@ namespace inheritance_study
         }
 
 
-        private void fMoving(int iMove)
+        private void fMoving(int iMove)   //iMove값은 5
         {
             fClearPanel();
 
             switch (lblName.Text)
             {
                 case "외발 자전거":
-                    _COC.fMove(iMove);
-                    fCOneCycleDraw();
+                    _COC.fMove(iMove);    // 변경된 X좌표 계산
+                    fCOneCycleDraw();     // 변경된 X위치에 따라 다시 그려줌
                     break;
 
                 case "자전거":
@@ -161,5 +164,6 @@ namespace inheritance_study
                     break;
             }
         }
+
     }
 }

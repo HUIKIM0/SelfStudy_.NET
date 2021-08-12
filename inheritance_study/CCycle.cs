@@ -35,10 +35,10 @@ namespace inheritance_study
             //: base(sName) 해줬기 때문에 _rtCircle1, _rtSquare1 다시 생성 안해줘도 됨(상속)
             //but _rtCircle1과 _rtSquare1의 위치좌표값을 달리함. 그래서 new 로 재생성
 
-            _rtCircle1 = new Rectangle(30, 150, 120, 120);  //바퀴 그려주기
-            _rtSquare1 = new Rectangle(60, 90, 240, 60);    //몸통 그려주기
+            _rtCircle1 = new Rectangle(30, 150, 120, 120);  //바퀴 좌표
+            _rtSquare1 = new Rectangle(60, 90, 240, 60);    //몸통 좌표
 
-            _rtCircle2 = new Rectangle(210, 150, 120, 120);  //바퀴 그려주기
+            _rtCircle2 = new Rectangle(210, 150, 120, 120);  //바퀴 좌표
 
         }
 
