@@ -11,8 +11,6 @@ namespace Partial_discount
     /* 변수 */
     partial class cData
     {
-        
-        private string _strItem = string.Empty;
 
         private double _total = 0.0;
         public double Total 
@@ -32,6 +30,8 @@ namespace Partial_discount
             //set => _strErrorName = value;   에러메시지를 외부에서 못적게
         }
 
+
+        private string _strItem = string.Empty;
 
         public string StrItem
         {

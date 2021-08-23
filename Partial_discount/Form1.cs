@@ -39,13 +39,13 @@ namespace Partial_discount
             }
         }
 
-        //담기 버튼을 누르면 물건이름 할인율 개수 값이!
+        //담기 버튼을 누르면 물건이름 할인율 개수 값이 들어옴
         private void btnAdd_Click(object sender, EventArgs e)
         {
             _Data.fDataReset();  //초기화 시키고 시작
 
             _Data.StrItem = cboxItem.Text;
-            _Data.IRate = (int)Enum.Parse(typeof(EnumRate), cboxRate.Text);   //EnumRate의 할인_3 = 3에서 3만 가져오고 싶어서
+            _Data.IRate = (int)Enum.Parse(typeof(EnumRate), cboxRate.Text);   //할인_3 = 3에서 3만 가져오고 싶어서
             _Data.ICount = (int)numCount.Value;    //NumericUpDown은 Value
 
             if(!string.IsNullOrEmpty(_Data.StrErrorName))  //strErrorName가 lsNullOrEmpty가 아니면 !
