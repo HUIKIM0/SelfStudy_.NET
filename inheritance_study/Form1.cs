@@ -33,6 +33,12 @@ namespace inheritance_study
             _CCar = new CCar("자동차");
         }
 
+        //Panel 지우고 다시 그리게 하게끔
+        private void fClearPanel()
+        {
+            pMain.Invalidate();
+            Refresh();
+        }
 
         //Form1.Designer에서 this.KeyDown += 해준거
         private void Form1_KeyDown(object sender, System.Windows.Forms.KeyEventArgs e)
@@ -117,15 +123,6 @@ namespace inheritance_study
             g.DrawEllipse(p, _CCar._rtCircle2);
 
         }
-
-
-        //Panel 지우고 다시 그리게 하게끔
-        private void fClearPanel()
-        {
-            pMain.Invalidate();
-            Refresh();
-        }
-
 
         
         private void btnRight_Click(object sender, EventArgs e)
