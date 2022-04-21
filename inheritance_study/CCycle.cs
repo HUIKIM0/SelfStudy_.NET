@@ -32,7 +32,6 @@ namespace inheritance_study
             _Pen = new Pen(Color.Black, 3);  //굵기는 3
 
             //★한칸에 30pexel로 계산
-            //: base(sName) 해줬기 때문에 _rtCircle1, _rtSquare1 다시 생성 안해줘도 됨(상속)
             //but _rtCircle1과 _rtSquare1의 위치좌표값을 달리함. 그래서 new 로 재생성
 
             _rtCircle1 = new Rectangle(30, 150, 120, 120);  //바퀴 좌표

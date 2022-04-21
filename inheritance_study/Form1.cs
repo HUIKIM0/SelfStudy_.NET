@@ -90,9 +90,9 @@ namespace inheritance_study
         {
             lblName.Text = _CC.strName;
 
-            Graphics g = pMain.CreateGraphics();   //panel에 그릴거야
+            Graphics g = pMain.CreateGraphics();  
 
-            Pen p = _CC.fPenInfo(Color.Purple,8);   //COneCycle의 펜
+            Pen p = _CC.fPenInfo(Color.Purple,8);  
 
             g.DrawRectangle(p, _CC._rtSquare1);
             g.DrawEllipse(p, _CC._rtCircle1);
@@ -113,9 +113,9 @@ namespace inheritance_study
         {
             lblName.Text = _CCar.strName;
 
-            Graphics g = pMain.CreateGraphics();   //panel에 그릴거야
+            Graphics g = pMain.CreateGraphics();   
 
-            Pen p = _CCar.fPenInfo(Color.Orange,5);   //COneCycle의 펜
+            Pen p = _CCar.fPenInfo(Color.Orange,5);   
 
             g.DrawRectangle(p, _CCar._rtSquare1);
             g.DrawRectangle(p, _CCar._rtSquare2);
