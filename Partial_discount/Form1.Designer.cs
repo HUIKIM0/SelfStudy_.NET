@@ -120,9 +120,11 @@ namespace Partial_discount
             // 
             // tboxErrorMsg
             // 
+            this.tboxErrorMsg.BackColor = System.Drawing.SystemColors.Control;
             this.tboxErrorMsg.ForeColor = System.Drawing.Color.Red;
             this.tboxErrorMsg.Location = new System.Drawing.Point(26, 396);
             this.tboxErrorMsg.Name = "tboxErrorMsg";
+            this.tboxErrorMsg.ReadOnly = true;
             this.tboxErrorMsg.Size = new System.Drawing.Size(487, 25);
             this.tboxErrorMsg.TabIndex = 5;
             // 

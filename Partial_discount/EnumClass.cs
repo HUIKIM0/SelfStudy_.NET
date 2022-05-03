@@ -27,8 +27,10 @@ namespace Partial_discount
 
     }
 
-
-    class EnumClass
+    // class 밖에 Enum사용 -> namespace만 같으면 쉽게 접근해서 쓰게
+/*    class EnumClass
     {
-    }
+
+    }*/
+
 }

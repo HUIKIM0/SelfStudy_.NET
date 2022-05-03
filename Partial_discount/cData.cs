@@ -27,6 +27,7 @@ namespace Partial_discount
         public string StrErrorName
         {
             get => _strErrorName;
+
             //set => _strErrorName = value;   에러메시지를 외부에서 못적게
         }
 
@@ -104,9 +105,6 @@ namespace Partial_discount
             }
         }
 
-
-       
-     
     }
 
     /* 할인율 계산 */
@@ -130,7 +128,6 @@ namespace Partial_discount
             return dPrice * _iCount;  //할인된가격 * 물건개수
         }
     }
-
 
 
 
