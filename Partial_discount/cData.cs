@@ -33,7 +33,6 @@ namespace Partial_discount
 
 
         private string _strItem = string.Empty;
-
         public string StrItem
         {
             //get
@@ -80,7 +79,6 @@ namespace Partial_discount
 
 
         private int _iCount = 0;   //개수
-
         public int ICount 
         {
             //get
@@ -142,7 +140,7 @@ namespace Partial_discount
             }
             else
             {
-                return string.Format("{0} X {1} : {2}원 (할인율 : {3})", _strItem, _iCount, dPrice, _iRate);
+                return string.Format("{0} X {1} : {2}원 (할인율 : {3}%)", _strItem, _iCount, dPrice, _iRate);
             }
 
             
